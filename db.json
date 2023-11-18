@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "firstName": "ehud",
+      "lastName": "ginzb",
+      "age": "29",
+      "email": "ehud560@gmail.com",
+      "password": "565wwe565",
+      "isAdmin": true,
+      "id": 1
+    }
+  ]
+}
