@@ -11,6 +11,7 @@ import Pricing from './components/Pricing';
 import PageNotFound from './components/PageNotFound';
 import Login from './components/Login';
 import Register from './components/Register';
+import Profile from './components/Profile';
 
 
 
@@ -32,6 +33,7 @@ function App() {
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/about" element={<About />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />

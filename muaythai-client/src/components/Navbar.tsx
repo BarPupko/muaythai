@@ -27,53 +27,50 @@ const Navbar: FunctionComponent<NavbarProps> = ({ userInfo, setUserInfo }) => {
                                 About
                             </NavLink>
                         </li>
-
                         <li className="nav-item">
                             <NavLink className="nav-link text-white" to="/schedule">
                                 Schedule
                             </NavLink>
                         </li>
                     </ul>
-                </div>
-                <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span className="navbar-toggler-icon"></span>
-
-                </button>
-                {userInfo.email ? (
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-
-                            <li className="nav-item">
-                                <NavLink className="nav-link text-white" to="/profile">
-                                    Profile
-                                </NavLink>
-                            </li>
-                        </ul>
+                    <button
+                        className="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    {userInfo.email ? (
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li className="nav-item">
+                                    <NavLink className="nav-link text-white" to="/profile">
+                                        Profile
+                                    </NavLink>
+                                </li>
+                            </ul>
+                            <form className="d-flex">
+                                <button className="btn text-white border-white " onClick={logout}>
+                                    Logout
+                                </button>
+                            </form>
+                        </div>
+                    ) : (
                         <form className="d-flex">
-                            <button className="btn text-'white' border-white " onClick={logout}>
-                                Logout
-                            </button>
+                            <NavLink className="btn text-white border-white" to="/login">
+                                Login
+                            </NavLink>
+                            <NavLink className="btn text-white border-white" to="/register">
+                                Register
+                            </NavLink>
                         </form>
-                    </div>
-                ) : (
-                    <form className="d-flex">
-                        <NavLink className="btn text-white border-white" to="/login">
-                            Login
-                        </NavLink>
-                        <NavLink className="btn text-white border-white" to="/register">
-                            Register
-                        </NavLink>
-                    </form>
 
-                )}
+                    )}
+                </div>
+
             </div>
         </nav>
     </>);
