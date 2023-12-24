@@ -14,7 +14,9 @@ const Profile: FunctionComponent<ProfileProps> = () => {
             .catch((err) => console.log(err));
     }, []);
     return (
-        <>
+        <><div className="container col-md-3">
+            <h3 className="display-3 text-white">Profile</h3>
+
             <div className="card">
                 <div className="card-title">{userInfo?.firstName}</div>
                 <div className="card-body">
@@ -22,6 +24,7 @@ const Profile: FunctionComponent<ProfileProps> = () => {
                     {userInfo?.isAdmin ? <p>This user is admin</p> : <p>Regular user</p>}
                 </div>
             </div>
+        </div>
         </>
     );
 };

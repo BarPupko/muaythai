@@ -16,6 +16,7 @@ const Home: FunctionComponent<HomeProps> = () => {
             <img className="muayt" src={muayt} alt="Price" />
         </div>
         <Pricing />
+
     </>);
 }
 
