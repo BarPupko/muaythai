@@ -6,6 +6,11 @@ body {
   background-color: black;
 }
 
+.custom-toggler {
+  background-color: white;
+  border: 1px solid white;
+}
+
 .AMT {
   display: flex;
   justify-content: center;
