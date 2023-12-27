@@ -53,7 +53,7 @@ const Register: FunctionComponent<RegisterProps> = ({ setUserInfo }) => {
         <>
             <div className="container col-md-10">
                 <form onSubmit={formik.handleSubmit}>
-                    <h3 className="display-3">REGISTER</h3>
+                    <h3 className="display-3 text-white text-center">REGISTER</h3>
                     <div className="row">
                         <div className="container col-md-5">
                             <div className="form-floating mb-3">
