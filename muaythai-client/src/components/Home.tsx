@@ -47,7 +47,7 @@ const Home: FunctionComponent<HomeProps> = () => {
                                 </div>
                                 <h5 className="text-center">Inclusive</h5>
 
-                                <p className="text-center"><span data-testid="comment-base-item-42187">Groundswell Mixed Martial Arts is ready to provide both eager beginners and confident, seasoned athletes with the best training regardless of their age or experience.</span></p>
+                                <p className="text-center"><span data-testid="comment-base-item-42187">Groundswell Muay Thai is ready to provide both eager beginners and confident, seasoned athletes with the best training regardless of their age or experience.</span></p>
                             </div>
                         </div>
                         <div className="col-md-4">
@@ -86,7 +86,7 @@ const Home: FunctionComponent<HomeProps> = () => {
                                 </div>
                                 <h5 className="text-center">Confident</h5>
 
-                                <p className="text-center"><span data-testid="comment-base-item-42187">The uplifting environment you’ll find at Groundswell MMA will provide you with a new sense of self.</span></p>
+                                <p className="text-center"><span data-testid="comment-base-item-42187">The uplifting environment you’ll find at Groundswell Muay Thai will provide you with a new sense of self.</span></p>
                             </div>
                         </div>
                         <div className="col-md-4">
