@@ -14,10 +14,12 @@ interface HomeProps {
 
 const Home: FunctionComponent<HomeProps> = () => {
     return (<>
-        <h1 className="text-white text-center ">Wellcome to Muay-Thai</h1>
-        <p className="text-white text-center">our website is about what we are teaching<br />
-            we teaching self-defense, muay-thai, boxing and kickboxing
-        </p>
+        <div className="container">
+            <h4 className="text-white text-center">Welcome!</h4>
+            <h2 className="text-white text-center">Muay-Thai</h2>
+            <p className="text-white text-center">We strive to provide the highest level of insightful, targeted training through our experience and environment— providing our students with tools and lessons to grow, thrive and to create an unwavering level of self-respect. We build students that are confident, yet humble and altogether a better version of themselves through teaching martial arts in Karmiel, Israel. We’re attentive to everyone of all skill levels and ages and provide a sense of belonging because we truly do care about their journey.
+            </p>
+        </div>
         <div className="muayt-container">
             <img className="muayt" src={muayt} alt="Price" />
         </div>
@@ -113,25 +115,30 @@ const Home: FunctionComponent<HomeProps> = () => {
 
         <section>
             <div className="container">
-                <Container>
-                    <h1 className="text-white">Contact Us</h1>
+                <Container className="my-5 p-5 shadow-lg bg-white rounded">
+                    <h1 className="text-center mb-4">Get in Touch</h1>
                     <Form>
                         <Form.Group controlId="formName">
-                            <Form.Label className="text-white">Your Name</Form.Label>
+                            <Form.Label>Your Name</Form.Label>
                             <Form.Control type="text" placeholder="Enter your name" />
                         </Form.Group>
 
                         <Form.Group controlId="formEmail">
-                            <Form.Label className="text-white">Email address</Form.Label>
+                            <Form.Label>Email Address</Form.Label>
                             <Form.Control type="email" placeholder="Enter your email" />
                         </Form.Group>
 
+                        <Form.Group controlId="formPhoneNumber">
+                            <Form.Label>Phone Number</Form.Label>
+                            <Form.Control type="tel" placeholder="Enter your phone number" />
+                        </Form.Group>
+
                         <Form.Group controlId="formMessage">
-                            <Form.Label className="text-white">Message</Form.Label>
+                            <Form.Label>Message</Form.Label>
                             <Form.Control as="textarea" rows={3} placeholder="Enter your message" />
                         </Form.Group>
-                        <br />
-                        <Button variant="primary" type="submit">
+
+                        <Button className="w-100" variant="primary" type="submit">
                             Submit
                         </Button>
                     </Form>
