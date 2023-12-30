@@ -38,6 +38,11 @@ const Navbar: FunctionComponent<NavbarProps> = ({ userInfo, setUserInfo }) => {
                                 About
                             </NavLink>
                         </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link text-white" to="/schedule">
+                                Schedule
+                            </NavLink>
+                        </li>
                     </ul>
 
                     {userInfo.email ? (
