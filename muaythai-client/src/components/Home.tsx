@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+import { Container, Form, Button } from 'react-bootstrap';
 import Pricing from "./Pricing";
 import muayt from '../images/muayt.jpg';
 import motivation from '../images/motivation.png';
@@ -107,6 +108,35 @@ const Home: FunctionComponent<HomeProps> = () => {
             </div>
             <div className="container highlights-tagline">
                 <h5></h5>
+            </div>
+        </section>
+
+        <section>
+            <div className="container">
+                <Container>
+                    <h1 className="text-white">Contact Us</h1>
+                    <Form>
+                        <Form.Group controlId="formName">
+                            <Form.Label className="text-white">Your Name</Form.Label>
+                            <Form.Control type="text" placeholder="Enter your name" />
+                        </Form.Group>
+
+                        <Form.Group controlId="formEmail">
+                            <Form.Label className="text-white">Email address</Form.Label>
+                            <Form.Control type="email" placeholder="Enter your email" />
+                        </Form.Group>
+
+                        <Form.Group controlId="formMessage">
+                            <Form.Label className="text-white">Message</Form.Label>
+                            <Form.Control as="textarea" rows={3} placeholder="Enter your message" />
+                        </Form.Group>
+                        <br />
+                        <Button variant="primary" type="submit">
+                            Submit
+                        </Button>
+                    </Form>
+                </Container>
+                <br />
             </div>
         </section>
     </>);
