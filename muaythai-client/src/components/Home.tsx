@@ -1,6 +1,7 @@
 import { FunctionComponent } from "react";
 import Pricing from "./Pricing";
 import muayt from '../images/muayt.jpg';
+import Schedule from "./Schedule";
 
 interface HomeProps {
 
@@ -16,7 +17,7 @@ const Home: FunctionComponent<HomeProps> = () => {
             <img className="muayt" src={muayt} alt="Price" />
         </div>
         <Pricing />
-
+        <Schedule />
     </>);
 }
 
