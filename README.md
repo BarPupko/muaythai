@@ -39,3 +39,25 @@ To run this web application locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/ehud560/muaythai
+
+   1. install dependencies:
+   npm install
+
+   2. Configure the database:
+      - Create a database and configure the connection in the'.env'file.
+   3. Run the application:
+   npm start
+
+## Usage
+   1. Visit the website at http://localhost:3000 in your web browser.
+   2. Register for an account or log in if you already have one.
+   3. Explore the different features, including scheduling and information about Muay Thai.
+
+## Contributing
+If you would like to contribute to the development of this project, please follow our contribution guidelines.
+
+## License
+This project is licensed under the MIT License.
+
+
+Remember to replace placeholder URLs, usernames, and other generic information with your actual details. Additionally, consider creating separate documentation for your database schema, API endpoints, and other technical details if needed.
